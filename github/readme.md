@@ -8,4 +8,7 @@ git init 으로 초기화
 git config 이용해서 기본 설정
  - git config user.name " "
  - git config user.email " "
-  
+
+'''
+git init
+'''
