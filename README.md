@@ -1,1 +1,1 @@
-- [Github]{08_oz-mac/github}
+- [Github]{08_oz-mac/github/}
