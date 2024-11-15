@@ -55,3 +55,12 @@ Git파일 commit하는 순서
 *git init 을 잘못할경우 repositories에 제대로된 디렉토리가 생성 되지 않고 commit , push 되지 않을 수 있다.*
 
 
+### Day 2
+- git reset --hard "커밋해시" // 이전 commit으로 되돌린후 , 그 이후 이력들을 모두삭제
+- git reset --soft "커밋해시" // 이전 commit으로 되돌린후 , 그 이후 내용이 stage에 올라가있어서 언제든지 commit 할수 있는 상태가됨.
+- git reset --mixed "커밋해시" // 이전 commit으로 되돌린후 , 그 이후 내용이 삭제되지 않았지만 다시 commit 위해서는 add 로 stage 올려야함.
+
+- git reflog // 커밋이 바뀐 내역을 보여주고 이를 사용하면 reset 하기 이전 시점으로 프로젝트를 복구할 수 있다.
+- git reset --hard "커밋해시" // 이전 commit으로 되돌이고 이전 내역 복구.
+
+- git revert "커밋해시" //
