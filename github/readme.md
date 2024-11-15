@@ -63,7 +63,7 @@ Git파일 commit하는 순서
 - git reflog // 커밋이 바뀐 내역을 보여주고 이를 사용하면 reset 하기 이전 시점으로 프로젝트를 복구할 수 있다.
 - git reset --hard "커밋해시" // 이전 commit으로 되돌이고 이전 내역 복구.
 
-- git revert "커밋해시" //
+- git revert "커밋해시" // 이전 commit 등록 전으로 복구 
 
 - git branch 브랜치명 //브랜치 생성
 - git branch // 브랜치 확인
@@ -71,3 +71,5 @@ Git파일 commit하는 순서
 - git switch -c 브랜치명 // 브랜치 생성 후 이동
 - git branch -d 브랜치명 // 브랜치 삭제
 - git branch -m 기존브랜치명 변경할브랜치명 // 브랜치 이름 변경
+
+ * HEAD 는 해당 branch의 마지막 commit을 뜻한다. *
