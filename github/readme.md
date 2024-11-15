@@ -25,15 +25,15 @@ Git파일 commit하는 순서
  - git config --global user.email " "
  - git config --global --list // global config 확인하가능 
 
- - git add " " //커밋할 대상추가
- - git resert " " //커밋할 대상 취소
- - git add . //*이전? 전체? 커밋 대상 추가*
- - git status //현재 git 상태 확인
+ - git add " " // 커밋할 대상추가
+ - git resert " " // 커밋할 대상 취소
+ - git add . // 전체 커밋할 대상 추가
+ - git status // 현재 git 상태 확인
  - git commit -m " " // 커밋시 메세지
  - git branch -M main // main대신 master 가 최상위일때 변경필요 일부 운영체제 버전따라 수정필요 
  - git remote add origin https://github/"닉네임"/"리파지토리명.git"  // origin 에 리파지토리 지정
- - git remote origin //
- - git remote -v //상세 origin 주소확인가능
+ - git remote origin // origin 주소확인
+ - git remote -v // 상세 origin 주소확인가능
 
 
  - git log //로그 확인가능 
