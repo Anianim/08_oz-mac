@@ -52,5 +52,4 @@ git log --oneline //한줄로 단축해서 알려줌
 git log --grep " " //검색어가 포함된 커밋만 보여줌
 git log --all --decorate --oneline --graph //자주 사용되는 그래프 로그보기
 
-git init 을 잘못할경우 repositories에 제대로된 디렉토리가 생성 되지 않고 commit , push 되지 않을 수 있다.
-
+git init 을 잘못할경우 repositories에 제대로된 디렉토리가 생성 되지 않고 commit , push 되지 않을 수 있다
