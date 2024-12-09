@@ -4,7 +4,7 @@ import pymysql
 import dum_info
 from pymysql.cursors import DictCursor
 
-# Faker 객체 생성
+
 fake = dum_info.user_info
 
 # 데이터베이스 연결 설정
