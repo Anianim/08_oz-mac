@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>회원가입 페이지</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body >
+        <div class="d-flex justify-content-center align-items-center p-5">
+            <div class="mt-3 p-5" style=" border: 2px solid #dee2e6; border-radius: 50px;">
+            <!-- 모드변경 -->
+                <div class="container">
+                    <div class="d-flex justify-content-end mt-3">
+                        <select class="form-select w-auto" style="background-color: #a3a3a3;" id="modeSelector">
+                            <option value="" selected>Mode</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                </div>
+            <!--회원 가입 -->
+                <h2 class="text-start fw-bold mb-3">회원가입</h2>
+                <form id="registerForm">
+                    <!-- 아이디-->
+                    <div class="mb-3">
+                    <label for="username" class="form-label fw-bold">아이디</label>
+                    <input type="text" class="form-control" id="username" placeholder="아이디">
+                    </div>
+                    <!--비밀번호-->
+                    <div class="mb-3">
+                    <label for="password" class="form-label fw-bold">비밀번호</label>
+                    <input type="password" class="form-control" id="password" placeholder="비밀번호">
+                    <small class="form-text text-muted">영문, 숫자, 특수문자를 포함한 8자 이상 30자 미만이어야 합니다.</small>
+                    </div>
+                    <!--비밀번호확인-->
+                    <div class="mb-3">
+                    <label for="confirmPassword" class="form-label fw-bold">비밀번호 확인</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="비밀번호 확인">
+                    </div>
+                    <!--이름-->
+                    <div class="mb-3">
+                    <label for="name" class="form-label fw-bold">이름</label>
+                    <input type="text" class="form-control" id="name" placeholder="사용자 이름">
+                    </div>
+                    <!--전화번호-->
+                    <div class="mb-3">
+                    <label for="phone" class="form-label fw-bold">전화번호</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="휴대전화 번호">
+                    </div>
+                    <!--성별-->
+                    <div class="mb-3"> 
+                        <label class="form-label fw-bold">성별</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+                                    <label class="form-check-label" for="male">남성</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    <label class="form-check-label" for="female">여성</label>
+                                </div>
+                            </div>
+                    </div>
+                    <!--Email-->
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">이메일 주소</label>
+                        <input type="email" class="form-control" id="email" placeholder="이메일">
+                    </div>
+                    <!--가입 버튼-->
+                    <button type="submit" class="btn btn-primary btn-sm">가입</button>
+                </form>
+            </div>
+        </div>  
+        <!-- 스크립트 -->
+        <script>
+            /* 모드 변경 */
+            const modeSelector = document.getElementById('modeSelector');
+            modeSelector.addEventListener('change', () => {
+                if (modeSelector.value === 'dark') {
+                    document.querySelector('html').setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.querySelector('html').setAttribute('data-bs-theme', 'light');
+                }
+            });
+            
+            /* 기본 모드값 */
+            document.querySelector('html').setAttribute('data-bs-theme', 'light');
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="joinform.js"></script>
+    </body>
+</html>
