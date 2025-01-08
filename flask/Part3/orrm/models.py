@@ -10,8 +10,10 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30), nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False) 
+    adress = db.Column(db.String(120), nullable=False) 
     boards = db.relationship('Board', back_populates='author', lazy='dynamic') 
     # lazy = dynamic 특정 글만 조회 할 수 있음.
+    
 
 class Board(db.Model):
     __tablename__ = "boards"
